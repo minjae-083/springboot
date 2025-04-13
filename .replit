@@ -62,3 +62,19 @@ mainClass = "Main"
 build = ["sh", "-c", "./gradlew build"]
 run = ["sh", "-c", "java -jar build/libs/*.jar --server.address=0.0.0.0"]
 deploymentTarget = "cloudrun"
+
+[workflows]
+runButton = "Spring Boot"
+
+[[workflows.workflow]]
+name = "Spring Boot"
+author = 40093334
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./gradlew bootRun"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
