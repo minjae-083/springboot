@@ -59,6 +59,6 @@ classPaths = ["."]
 mainClass = "Main"
 
 [deployment]
-build = ["javac", "-classpath", ".:target/dependency/*", "-d", ".", "$(find . -type f -name '*.java')"]
-run = ["java", "-classpath", ".:target/dependency/*", "Main"]
+build = ["sh", "-c", "./gradlew build"]
+run = ["sh", "-c", "java -jar build/libs/*.jar --server.address=0.0.0.0"]
 deploymentTarget = "cloudrun"
