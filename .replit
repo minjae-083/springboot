@@ -3,3 +3,15 @@ modules = ["web", "java-graalvm22.3", "nix"]
 [nix]
 channel = "stable-24_05"
 packages = ["gradle"]
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 40093334
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd tutorial && ./gradlew bootRun"
