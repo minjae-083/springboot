@@ -14,4 +14,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd tutorial && mvn spring-boot:run"
+args = "cd tutorial && ./gradlew bootRun"
