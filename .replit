@@ -2,7 +2,7 @@ modules = ["web", "java-graalvm22.3", "nix"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["gradle"]
+packages = ["gradle", "gut"]
 
 [workflows]
 runButton = "Run"
