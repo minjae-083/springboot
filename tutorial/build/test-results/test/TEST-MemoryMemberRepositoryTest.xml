@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MemoryMemberRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-20T14:02:58.797Z" hostname="7fd5f8e2dd30" time="0.161">
+  <properties/>
+  <testcase name="save()" classname="MemoryMemberRepositoryTest" time="0.161"/>
+  <system-out><![CDATA[result = true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

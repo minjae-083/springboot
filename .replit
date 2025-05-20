@@ -33,6 +33,15 @@ args = "git commit -m 'commit message'"
 task = "shell.exec"
 args = "git push origin main"
 
+[[workflows.workflow]]
+name = "test"
+mode = "sequential"
+author = 40093334
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd tutorial && ./gradlew test"
+
 [[ports]]
 localPort = 8080
 externalPort = 80
