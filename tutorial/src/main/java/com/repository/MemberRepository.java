@@ -1,9 +1,9 @@
 package com.repository;
 
-import spring.com.domain.Member;
-
+import com.domain.Member;
 import java.util.List;
 import java.util.Optional;
+
 
 public interface MemberRepository {
   Member save(Member member);
