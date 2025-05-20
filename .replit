@@ -16,6 +16,23 @@ mode = "sequential"
 task = "shell.exec"
 args = "cd tutorial && ./gradlew bootRun"
 
+[[workflows.workflow]]
+name = "git commit"
+mode = "sequential"
+author = 40093334
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "git add ."
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "git commit -m 'commit message'"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "git push origin main"
+
 [[ports]]
 localPort = 8080
 externalPort = 80
