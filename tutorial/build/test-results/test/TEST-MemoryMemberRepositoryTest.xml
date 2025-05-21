@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MemoryMemberRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-20T14:02:58.797Z" hostname="7fd5f8e2dd30" time="0.161">
+<testsuite name="MemoryMemberRepositoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-21T14:15:15.139Z" hostname="6aa03879adbc" time="0.144">
   <properties/>
-  <testcase name="save()" classname="MemoryMemberRepositoryTest" time="0.161"/>
+  <testcase name="findAll()" classname="MemoryMemberRepositoryTest" time="0.109"/>
+  <testcase name="findByName()" classname="MemoryMemberRepositoryTest" time="0.004"/>
+  <testcase name="save()" classname="MemoryMemberRepositoryTest" time="0.012"/>
   <system-out><![CDATA[result = true
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
