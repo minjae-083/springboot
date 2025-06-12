@@ -4,9 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.repository.MemberRepository;
-import com.repository.MemoryMemberRepository;
+import com.repository.JdbcMemberRepository;
 import com.service.MemberService;
 import org.springframework.jdbc.datasource.DataSourceUtils;
+import javax.sql.DataSource;
 
 @Configuration
 public class SpringConfig {

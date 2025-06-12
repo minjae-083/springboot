@@ -1,4 +1,4 @@
-package spring.study1.repository;
+package com.repository;
 
 import com.domain.Member;
 import com.repository.MemberRepository;
