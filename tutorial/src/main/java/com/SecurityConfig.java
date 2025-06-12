@@ -11,8 +11,7 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.ignoringRequestMatchers("/h2-console/**"))
             .headers(headers -> headers.frameOptions(frame -> frame.sameOrigin()))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/h2-console/**").permitAll()
-                .anyRequest().authenticated()
+                .anyRequest().permitAll() // 모든 요청 인증 없이 허용
             );
         return http.build();
     }
