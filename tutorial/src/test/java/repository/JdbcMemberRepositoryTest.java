@@ -1,14 +1,20 @@
 import com.domain.Member;
 import com.repository.JdbcMemberRepository;
-import javax.sql.DataSource;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@SpringBootTest
+@Transactional
 class JdbcMemberRepositoryTest {
-  JdbcMemberRepository repository = new JdbcMemberRepository(DataSource datasource);
+  @Autowired  
+  JdbcMemberRepository repository;
+  
   @Test
   public void save() {
     Member member = new Member();

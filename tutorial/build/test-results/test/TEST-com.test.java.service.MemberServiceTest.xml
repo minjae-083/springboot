@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.test.java.service.MemberServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-27T13:18:07.035Z" hostname="f4eae1da3de9" time="0.007">
+<testsuite name="com.test.java.service.MemberServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-12T13:40:55.659Z" hostname="3a92afcba546" time="0.023">
   <properties/>
-  <testcase name="joinTest()" classname="com.test.java.service.MemberServiceTest" time="0.007"/>
+  <testcase name="joinTest()" classname="com.test.java.service.MemberServiceTest" time="0.023"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
