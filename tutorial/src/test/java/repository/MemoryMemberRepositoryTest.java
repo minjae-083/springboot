@@ -1,4 +1,4 @@
-package com.repository;
+package repository;
 
 import com.domain.Member;
 import com.repository.MemoryMemberRepository;
