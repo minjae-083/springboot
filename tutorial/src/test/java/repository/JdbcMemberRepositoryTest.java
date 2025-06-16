@@ -1,3 +1,5 @@
+package repository;
+
 import com.domain.Member;
 import com.repository.JdbcMemberRepository;
 import java.util.List;

@@ -1,5 +1,3 @@
-package com.repository;
-
 import com.domain.Member;
 import com.repository.MemberRepository;
 import java.sql.*;
