@@ -2,12 +2,12 @@ package com.repository;
 
 import com.domain.Member;
 import com.repository.MemberRepository;
-import org.springframework.jdbc.datasource.DataSourceUtils;
-import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import javax.sql.DataSource;
+import org.springframework.jdbc.datasource.DataSourceUtils;
 
 public class JdbcMemberRepository implements MemberRepository {
 
