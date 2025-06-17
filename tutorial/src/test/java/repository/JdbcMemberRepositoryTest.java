@@ -8,13 +8,15 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
+import com.DemoApplication;
+
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest
+@SpringBootTest(classes = DemoApplication.class)
 @Transactional
 class JdbcMemberRepositoryTest {
-  @Autowired  
+  @Autowired
   JdbcMemberRepository repository;
   
   @Test
