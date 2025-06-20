@@ -45,7 +45,6 @@ class JdbcMemberRepositoryTest {
 
     Member result = repository.findByName("spring1").get();
 
-    // assertThat(result).isEqualTo(member1);
     assertThat(result).isEqualTo(member1);
   }
 
