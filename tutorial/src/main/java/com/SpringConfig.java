@@ -8,6 +8,7 @@ import com.repository.JdbcMemberRepository;
 import com.service.MemberService;
 import org.springframework.jdbc.datasource.DataSourceUtils;
 import javax.sql.DataSource;
+import com.repository.JdbcTemplateMemberRepository;
 
 @Configuration
 public class SpringConfig {
@@ -25,6 +26,7 @@ public class SpringConfig {
 
   @Bean
   public MemberRepository memberRepository(){
-    return new JdbcMemberRepository(dataSource);
+    // return new JdbcMemberRepository(dataSource);
+    return new JdbcTemplateMemberRepository(dataSource);
   }
 }
